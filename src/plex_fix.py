@@ -1,4 +1,8 @@
-from plexapi.myplex import MyPlexAccount
+try:
+    from plexapi.myplex import MyPlexAccount
+except ModuleNotFoundError as err:
+    print("Unable to load plexapi. Did you run 'pip install plexapi'? {0}".format(err))
+
 from plexapi.myplex import Unauthorized
 from plexapi.myplex import BadRequest
 from plexapi.myplex import NotFound
@@ -48,7 +52,7 @@ def parse_and_validate_args(args1):
 def main():
     args = parse_and_validate_args(sys.argv[1:])
 
-    print('Log in to ' + args.server_name + 'Plex server')
+    print('Log in to ' + args.server_name + ' plex server')
     try:
         account = MyPlexAccount(username = args.user, password = args.password, token = args.token)
     except Unauthorized as err:
@@ -57,7 +61,7 @@ def main():
         sys.exit("Unable to log in: {0}".format(err))
 
     if args.token is None:
-        print('token is ' + account.authenticationToken)
+        print('Plex security token is ' + account.authenticationToken)
 
     printPrefix = ''
     if args.preview:
