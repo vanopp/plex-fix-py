@@ -12,26 +12,28 @@ Script designed for windows but should work on other platforms too
 - Python 3.7.3 or newer. [download](https://www.python.org/downloads/windows/)
 - Python plexapi. Run command from the command line to obtain it: `pip install plexapi`.
 
-## Use cases:
+## Usage samples:
 Applies all the modifications with authorization by plex user name and password
-```python plex_fix.py **-u "my_email@gmail.com" -p "my_password"** servername```
+```python plex_fix.py <b>-u "my_email@gmail.com" -p "my_password"</b> servername```
 
 Applies all the modifications with authorization by plex token
-```python plex_fix.py **-t tokenTokenTokenToken** servername```
+<pre>
+python plex_fix.py <b>-t tokenTokenTokenToken</b> servername
+</pre>
 authorization token seems to be more secure, [this arcticle](https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/) explains how to get it. Also authorization by username and password with script print received token to console.
 
 Apply changes to specific library 
-```python plex_fix.py -t tokenTokenTokenToken **--library LibraryName** servername```
+```python plex_fix.py -t tokenTokenTokenToken <b>--library LibraryName</b> servername```
 
 Revert changes previously done by this script to the Plex catalog:
-```python plex_fix.py -t tokenTokenTokenToken **--revert** servername```
+```python plex_fix.py -t tokenTokenTokenToken <b>--revert</b> servername```
 
 Preview changes to the Plex catalog:
-```python plex_fix.py -t tokenTokenTokenToken **--preview** servername```
+```python plex_fix.py -t tokenTokenTokenToken <b>--preview</b> servername```
 I. e. script will not modify anything, only prints out modifications to be done.
 
 ## Development notes.
-For opening solution(sln file) and running tests, Visual Studio 2019 Community edition or better with Python development workload installed is required. However main script plex-fix.py can be edited and executed individually without Visual Studio.
+For opening sln solution file and running tests, Visual Studio 2019 Community edition or better with Python development workload installed is required. However main script plex-fix.py can be edited and executed individually without Visual Studio.
 
 ## License
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+plexapi [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
