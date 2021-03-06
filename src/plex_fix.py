@@ -55,8 +55,6 @@ def main():
         sys.exit("Unable to log in: {0}".format(err))
     except BadRequest as err:
         sys.exit("Unable to log in: {0}".format(err))
-    
-#        raise
 
     if args.token is None:
         print('token is ' + account.authenticationToken)
