@@ -14,22 +14,20 @@ Script designed for windows but should work on other platforms too
 
 ## Usage samples:
 Applies all the modifications with authorization by plex user name and password
-```python plex_fix.py <b>-u "my_email@gmail.com" -p "my_password"</b> servername```
+<pre>python plex_fix.py <b>-u "my_email@gmail.com" -p "my_password"</b> servername</pre>
 
 Applies all the modifications with authorization by plex token
-<pre>
-python plex_fix.py <b>-t tokenTokenTokenToken</b> servername
-</pre>
+<pre>python plex_fix.py <b>-t tokenTokenTokenToken</b> servername</pre>
 authorization token seems to be more secure, [this arcticle](https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/) explains how to get it. Also authorization by username and password with script print received token to console.
 
 Apply changes to specific library 
-```python plex_fix.py -t tokenTokenTokenToken <b>--library LibraryName</b> servername```
+<pre>python plex_fix.py -t tokenTokenTokenToken <b>--library LibraryName</b> servername</pre>
 
 Revert changes previously done by this script to the Plex catalog:
-```python plex_fix.py -t tokenTokenTokenToken <b>--revert</b> servername```
+<pre>python plex_fix.py -t tokenTokenTokenToken <b>--revert</b> servername</pre>
 
 Preview changes to the Plex catalog:
-```python plex_fix.py -t tokenTokenTokenToken <b>--preview</b> servername```
+<pre>python plex_fix.py -t tokenTokenTokenToken <b>--preview</b> servername</pre>
 I. e. script will not modify anything, only prints out modifications to be done.
 
 ## Development notes.
