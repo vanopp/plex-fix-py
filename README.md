@@ -1,5 +1,4 @@
-# plex-fix-py
-??Python script fixing Plex server search issue
+# Fix non-ASCII Plex search
 
 Many years [Plex media server](https://www.plex.tv/) have an annoying issue where non-ASCII characters such as cyrillic or greek searched in a case-sensitive manner which leads to the unusable search for a large part of the community.
 Issue discussed on [Reddit](https://www.reddit.com/r/PleX/comments/f7czff/search_should_be_case_and_diacritics_insensitive/) and on [Official Plex forum](https://forums.plex.tv/t/search-is-case-sensitive-with-cyrillic-characters/141491)
