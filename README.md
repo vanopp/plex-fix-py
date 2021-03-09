@@ -33,6 +33,3 @@ For opening sln solution file and running tests, Visual Studio 2019 Community ed
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
-
-## Acknowledgments
-[plexapi](https://github.com/pkkid/python-plexapi) 
