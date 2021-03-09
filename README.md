@@ -9,7 +9,7 @@ All of the modifications done by this script can be reverted. Only exception sor
 
 ## Prequesties:
 Script designed for windows but should work on other platforms too
-- Python 3.7.3 or newer. [download](https://www.python.org/downloads/windows/) Hint: it is recommended to check "Add to path" if this is the first Python install on the machine.
+- Python 3.7.3 or newer. [download](https://www.python.org/downloads/windows/) Hint: it is recommended to check "Add Python to path" if this is the first Python install on the machine.
 - Python plexapi. Run command from the command line to obtain it: `pip install plexapi`.
 
 ## Usage samples:
@@ -32,4 +32,7 @@ Preview changes to the Plex catalog. I. e. do not modify anything, only print ou
 For opening sln solution file and running tests, Visual Studio 2019 Community edition or better with Python development workload installed is required. However python scripts can be edited and executed individually without Visual Studio.
 
 ## License
-plexapi [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+## Acknowledgments
+[plexapi](https://github.com/pkkid/python-plexapi) 
