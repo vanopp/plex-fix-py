@@ -1,0 +1,1 @@
+python %~dp0src/plex_fix.py -t %PlexToken% %COMPUTERNAME%
